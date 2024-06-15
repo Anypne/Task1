@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-image: url("1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: linear-gradient(rgb(16, 15, 15),rgb(1, 0, 0),rgb(79, 52, 52)); */
+}
+.to-do{
+    width: 40%;
+    /* height: 40%; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(76, 74, 74);
+    border-radius: 20px;
+    }
+.to1{
+    text-align: center;
+    margin-top: 20px;
+}
+.to-do h2{
+    font-size: 50px;
+    color: white;
+}
+.to-do h2 span{
+    font-size: 60px;
+    color: blue;
+}
+.to-do input{
+    width: 70%;
+    height: 30px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 30px;
+    /* margin-right: 30px; */
+    border: 1px solid black; 
+    margin-bottom: 10px;
+}
+button{
+    width: 70px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(240, 50, 50);
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.to-do ul{
+   width: 60%;
+   
+   margin: 0 auto;
+   margin-bottom: 10px;
+}
+.to-do ul li{
+    margin-top: 15px;
+    height: 25px;
+    border-radius: 10px;
+    /* width: 60%; */
+    list-style: none;
+    font-size: 20px;
+    background-color: white;
+    position: relative;
+}
+li::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    /* background-image: url("check.png"); */
+    background-size: cover;
+    background-position: center;
+    top: 3px;
+    left: 18px;
+}
+li.check{
+    text-decoration: line-through;
+}
+li.check::before{
+    background-image: url("check.png");
+}
